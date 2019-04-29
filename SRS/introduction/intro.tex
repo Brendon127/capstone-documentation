@@ -5,7 +5,7 @@ This document provides an in depth overview of our plans to implement object rec
 tracking and 2D mapping as part of the FMDS (Follow Me Drones System). 
 The system will be used to aid rangers in the field while scouting areas of suspected poaching/intrusion. 
 A drone employing our software will patrol with the ranger at a safe height while surveying the area 
-for objects which might aid the ranger and increase their scouting efficiency.   
+for objects which might be of interest to the ranger, thus increasing their efficiency.   
 
 \section{Project Scope}
 % $<$Provide a short description of the software being specified and its purpose,
@@ -13,20 +13,19 @@ for objects which might aid the ranger and increase their scouting efficiency.
 % corporate goals or business strategies. If a separate vision and scope document
 %is available, refer to it rather than duplicating its contents here.$>$
 
-The primary aim of the FMDS is to provide support to a ranger in the field by having the drone surveying the surrounding area for objects and sending notifications to the ranger upon identification. This will increase the rangers efficiency by providing an aerial overview of the surroundings and identifying objects that the ranger could potentially miss.
-
-While the drone is surveying it will periodically take a snapshot of the area for later use in creating a 2D map. 
+The primary aim of the FMDS is to provide support to a ranger in the field by having the drone surveying the surrounding area for objects and sending notifications to the ranger upon identification. This will increase 
+the rangers efficiency by providing an aerial overview of the surroundings and identifying objects that the 
+ranger could potentially miss.
+\newline
+\newline
+While the drone is surveying, it will periodically take a snapshot of the area for later use in creating a 2D map. 
+Any objects (Be it animals, humans or something a human would be carrying on them) that are detected by our object detection
+software will have their location recorded and a pin will be dropped on the 2D map. This can be used to detect hotspots for
+animals or even poachers.
 
 \section{Definitions, Acronyms and Abbreviations}
 
-
-\section{Intended Audience and Reading Suggestions}
-$<$Describe the different types of reader that the document is intended for,
-such as developers, project managers, marketing staff, users, testers, and
-documentation writers. Describe what the rest of this SRS contains and how it is
-organized. Suggest a sequence for reading the document, beginning with the
-overview sections and proceeding through the sections that are most pertinent to
-each reader type.$>$
+FMDS - Follow Me Drones System
 
 %\section{References}
 
